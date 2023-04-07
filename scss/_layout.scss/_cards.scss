@@ -1,0 +1,133 @@
+#Paises .card{
+    position: relative;
+    width: 14rem;
+    height: 19rem;
+    margin: 20px auto;
+}
+
+.card{
+    position: relative;
+    width: 18.75rem;
+    height: 25rem;
+    margin: 10px auto;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px grey;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+   position: absolute;
+   bottom: 0; 
+   width: 100%;
+   height: 45px;
+   line-height: 45px;
+   color: white; 
+   background: rgba(0, 0, 0, 4);
+   text-align: center;
+}
+
+#Paises .card .front h3 {
+  font-size: 20px;
+  position: absolute;
+  bottom: 0; 
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white; 
+  background: rgba(0, 0, 0, 4);
+  text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px grey;
+    }
+
+    @media (width <= 450px) {
+    .card .back{
+      transform: perspective(600px) rotateY(180deg);
+      background: rgb(3, 35, 54);
+      padding: 15px;
+      width: 90%;
+      height: 90%;
+      color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 5px 10px grey;
+      }  
+    }
+
+    .link-back{
+        color: #f3f3f3;
+        padding: 15px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .card .back .link{
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .card .back .link a{
+       color: #f3f3f3;
+       font-size: 1.5rem; 
+    }
+
+    .card .back h3{
+        font-size: 30px;
+        margin-top: 5px;
+        letter-spacing: 2px;
+    }
+
+    #Paises .card .back h3{
+      font-size: 20px;
+      margin-top: 20px;
+      letter-spacing: 2px;
+  }
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
