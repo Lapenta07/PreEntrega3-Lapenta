@@ -48,6 +48,7 @@ html {
   background-color: black;
   background-size: cover;
   margin: 0px 0px;
+  width: 100%;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -103,58 +104,6 @@ p {
   color: white;
 }
 
-.Continente {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 10rem auto 0rem auto;
-  min-height: 60vh;
-  gap: 3em;
-}
-
-@media (width = 1024px) {
-  .Continente {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 60px;
-    margin: 3rem 1rem 1rem 1rem;
-    min-height: 60vh;
-    gap: 3em;
-  }
-}
-@media (width <= 450px) {
-  .Continente {
-    display: block;
-    margin-bottom: 60px;
-    margin: 30px auto;
-    min-height: 60vh;
-    gap: 3em;
-  }
-}
-@media (min-width: 40em) {
-  #Paises {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 60%;
-    margin: 20px auto;
-    gap: 1.5em;
-  }
-}
-@media (width <= 450px) {
-  #Paises {
-    display: block;
-    margin-bottom: 60px;
-    margin: 30px auto;
-    min-height: 60vh;
-    gap: 1em;
-  }
-}
 #barra {
   min-height: 100px;
   width: 100%;
@@ -260,6 +209,58 @@ nav ul a li:focus {
   outline: 0;
 }
 
+.Continente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10rem auto 0rem auto;
+  min-height: 60vh;
+  gap: 3em;
+}
+
+@media (width = 1024px) {
+  .Continente {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 60px;
+    margin: 3rem 1rem 1rem 1rem;
+    min-height: 60vh;
+    gap: 3em;
+  }
+}
+@media (width <= 450px) {
+  .Continente {
+    display: block;
+    margin-bottom: 60px;
+    margin: 30px auto;
+    min-height: 60vh;
+    gap: 3em;
+  }
+}
+@media (min-width: 40em) {
+  #Paises {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 60%;
+    margin: 20px auto;
+    gap: 1.5em;
+  }
+}
+@media (width <= 450px) {
+  #Paises {
+    display: block;
+    margin-bottom: 60px;
+    margin: 30px auto;
+    min-height: 60vh;
+    gap: 1em;
+  }
+}
 #Paises .card {
   position: relative;
   width: 14rem;
@@ -373,7 +374,7 @@ nav ul a li:focus {
 }
 .link-back {
   color: #f3f3f3;
-  padding: 15px;
+  padding: 0.1rem;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,32 +507,75 @@ form button:focus {
   outline: 0;
 }
 
-.grid-col-span-3 {
-  -ms-grid-column-span: 3;
-  grid-column: span 3;
-}
-
-.testimonial-grid {
-  display: -ms-grid;
-  display: grid;
+.testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1.5rem;
   row-gap: 3rem;
-  -ms-grid-columns: 1fr 1.5rem 1fr 1.5rem 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  padding-block: 2rem;
   width: min(95%, 80rem);
-  margin-inline: auto;
+  margin: 10px auto;
+}
+
+@media (width <= 1024px) {
+  .testimonial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1.5rem;
+    width: auto;
+    margin: 10px auto;
+  }
+}
+@media (width <= 1024px) {
+  #carouselExampleFade {
+    width: 90%;
+  }
+}
+.carrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
 .tarjetas {
-  width: 22rem;
+  width: 18rem;
   border: 2px solid white;
   border-radius: 15px 15px 0px 0px;
   margin: 0 auto;
 }
 
+@media (width <= 1024px) {
+  .tarjetas {
+    width: 13rem;
+  }
+}
+@media (width <= 425px) {
+  .tarjetas {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+}
 .tarjetas img {
   border-radius: 15px 15px 0px 0px;
+}
+
+.card-text {
+  text-align: center;
 }
 
 .ciudades {
@@ -545,9 +589,19 @@ form button:focus {
           justify-content: space-between;
   padding: 0px 10px;
   margin: 0 auto;
-  width: min(95%, 80rem);
+  width: 90%;
 }
 
+@media (width <= 425px) {
+  .ciudades {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid white;
+    padding: 5px;
+  }
+}
 .texto-ciudad {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -556,11 +610,42 @@ form button:focus {
   width: 66%;
 }
 
+@media (width <= 425px) {
+  .texto-ciudad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+@media (width <= 425px) {
+  .texto-ciudad p {
+    text-align: center;
+  }
+}
 .foto-ciudad {
   width: 33%;
   border-radius: 0px 0px 0px 0px;
 }
 
+@media (width <= 425px) {
+  .foto-ciudad {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
 footer {
   background-color: rgba(9, 128, 197, 0.2);
   display: -webkit-box;
@@ -575,7 +660,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 90px;
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   bottom: 0;
 }
