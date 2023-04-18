@@ -34,7 +34,7 @@ html {
   }
 }
 #fondo {
-  background-image: url(../assets/back.jpg);
+  background-image: url(../assets/pyramid.gif);
   background-size: cover;
   margin: 0px 0px;
 }
@@ -227,6 +227,15 @@ nav ul a li:focus {
     display: flex;
     margin-bottom: 60px;
     margin: 3rem 1rem 1rem 1rem;
+    min-height: 60vh;
+    gap: 3em;
+  }
+}
+@media (width <= 768px) {
+  .Continente {
+    display: block;
+    margin-bottom: 60px;
+    margin: 30px auto;
     min-height: 60vh;
     gap: 3em;
   }
