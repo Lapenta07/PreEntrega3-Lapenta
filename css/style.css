@@ -169,15 +169,6 @@ nav {
     padding: 0px 0px;
   }
 }
-#logo {
-  margin-top: 20px;
-}
-
-@media (width <= 800px) {
-  #logo img {
-    width: 100%;
-  }
-}
 nav ul li {
   list-style-type: none;
   display: inline-block;
@@ -209,6 +200,15 @@ nav ul a li:focus {
   outline: 0;
 }
 
+#logo {
+  margin-top: 20px;
+}
+
+@media (width <= 800px) {
+  #logo img {
+    width: 100%;
+  }
+}
 .Continente {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -42,17 +42,7 @@ nav{
   }
 }
 
-#logo{
-    margin-top: 20px;
-    
-}
 
-@media (width <= 800px){
-  #logo img{
-    width: 100%;
-    
-  }
-}
 
 nav ul li{
     list-style-type: none;
@@ -83,4 +73,16 @@ nav ul a li:focus{
     color: #fff;
     transition: background-color 0.3s ease-out;
     outline: 0;
+}
+
+#logo{
+    margin-top: 20px;
+    
+}
+
+@media (width <= 800px){
+  #logo img{
+    width: 100%;
+    
+  }
 }
