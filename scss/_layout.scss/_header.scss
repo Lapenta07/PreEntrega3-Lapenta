@@ -56,9 +56,9 @@ nav ul li{
 }
 
 nav ul a li{
-    border: 1px solid rgb(3, 35, 54);
+    border: 1px solid $BtnColor;
     border-radius: 5px;
-    background-color: rgb(3, 35, 54);
+    background-color: $BtnColor;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -68,8 +68,8 @@ nav ul a li{
 
 nav ul a li:hover,
 nav ul a li:focus{
-    color: rgb(9, 128, 197);
-    background:rgb(9, 128, 197);
+    color: $mainColor;
+    background:$mainColor;
     color: #fff;
     transition: background-color 0.3s ease-out;
     outline: 0;

@@ -5,7 +5,7 @@
     max-width: 800px;
     justify-content: center;
     margin: 150px auto;
-    background: rgba(9, 128, 197, 0.5);
+    background: $BackgroundColor;
     padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 12px;
@@ -42,7 +42,7 @@
     background: none;
     outline: 0;
     color: #fff;
-    background: rgb(3, 35, 54);
+    background: $BtnColor;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
